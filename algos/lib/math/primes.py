@@ -9,7 +9,7 @@ def isPrime(n):
     return True
 
 
-  def sieveErastothenes(n):
+def sieveErastothenes(n):
     primesBool = [True]*(n+1)   # Initialize array of size n+1 due to zeroth indexing
     primesBool[0] = False
     primesBool[1] = False
@@ -21,5 +21,4 @@ def isPrime(n):
                 primesBool[k]=False
                 k+=i #Increment by i onwards to get i*(i+1) etc
     primes = [j for j in range(0, len(primesBool)) if primesBool[j]]
-    return primes
-    
+ 	return primes
